@@ -1,0 +1,55 @@
+{
+    "name": "jeffersongoncalves/filament-pixel",
+    "description": "Filament Pixel is a Laravel package that seamlessly integrates Meta Pixel analytics into your Blade templates. Using your Meta Pixel ID, it enables easy tracking of website visits and user interactions, providing valuable insights into your audience and website performance. With minimal setup, you can leverage Meta’s powerful analytics features directly within your application, helping you optimize your digital strategy and improve user engagement.",
+    "keywords": [
+        "jeffersongoncalves",
+        "laravel",
+        "filament-pixel"
+    ],
+    "homepage": "https://github.com/jeffersongoncalves/filament-pixel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2|^8.3",
+        "filament/filament": "^3.0",
+        "jeffersongoncalves/laravel-pixel": "^1.0",
+        "laravel/framework": "^11.0|^12.0",
+        "spatie/laravel-package-tools": "^1.14.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "orchestra/testbench": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeffersonGoncalves\\Filament\\Pixel\\": "src"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeffersonGoncalves\\Filament\\Pixel\\PixelServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
