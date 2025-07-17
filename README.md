@@ -12,6 +12,12 @@
 
 Filament Pixel is a Laravel package that seamlessly integrates Meta Pixel analytics into your Blade templates. Using your Meta Pixel ID, it enables easy tracking of website visits and user interactions, providing valuable insights into your audience and website performance. With minimal setup, you can leverage Meta’s powerful analytics features directly within your application, helping you optimize your digital strategy and improve user engagement.
 
+## Requirements
+
+- PHP 8.2 or higher
+- Laravel 11.0 or higher
+- Filament 4.0 or higher
+
 ## Installation
 
 You can install the package via composer:
