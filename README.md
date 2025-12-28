@@ -16,7 +16,7 @@ Filament Pixel is a Laravel package that seamlessly integrates Meta Pixel analyt
 
 - PHP 8.2 or higher
 - Laravel 11.0 or higher
-- Filament 4.0 or higher
+- Filament 5.0
 
 ## Installation
 
