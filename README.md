@@ -1,13 +1,13 @@
 <div class="filament-hidden">
 
-![Filament Pixel](https://raw.githubusercontent.com/jeffersongoncalves/filament-pixel/master/art/jeffersongoncalves-filament-pixel.png)
+![Filament Pixel](https://raw.githubusercontent.com/jeffersongoncalves/filament-pixel/3.x/art/jeffersongoncalves-filament-pixel.png)
 
 </div>
 
 # Filament Pixel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-pixel.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-pixel)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-pixel/fix-php-code-style-issues.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-pixel/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-pixel/fix-php-code-style-issues.yml?branch=3.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-pixel/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A3.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-pixel.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-pixel)
 
 Filament Pixel is a Laravel package that seamlessly integrates Meta Pixel analytics into your Blade templates. Using your Meta Pixel ID, it enables easy tracking of website visits and user interactions, providing valuable insights into your audience and website performance. With minimal setup, you can leverage Meta’s powerful analytics features directly within your application, helping you optimize your digital strategy and improve user engagement.
