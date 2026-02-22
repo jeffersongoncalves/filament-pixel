@@ -40,13 +40,13 @@ php artisan migrate
 Register the plugin in your Filament panel provider:
 
 ```php
-use JeffersonGoncalves\Filament\Pixel\FilamentPixelPlugin;
+use JeffersonGoncalves\Filament\Pixel\PixelPlugin;
 
 public function panel(Panel $panel): Panel
 {
     return $panel
         ->plugins([
-            FilamentPixelPlugin::make(),
+            PixelPlugin::make(),
         ]);
 }
 ```
@@ -58,7 +58,7 @@ That's it! Navigate to the **Settings > Meta Pixel** page in your panel to confi
 If you only want the automatic script injection without the settings page:
 
 ```php
-FilamentPixelPlugin::make()
+PixelPlugin::make()
     ->settingsPage(false),
 ```
 

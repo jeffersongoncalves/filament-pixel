@@ -6,7 +6,7 @@ use Filament\Contracts\Plugin;
 use Filament\Panel;
 use JeffersonGoncalves\Filament\Pixel\Pages\ManagePixelSettings;
 
-class FilamentPixelPlugin implements Plugin
+class PixelPlugin implements Plugin
 {
     protected bool $hasSettingsPage = true;
 
