@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.2.0 - 2026-02-22
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filament-pixel/compare/2.1.0...2.2.0
+
 ## 2.1.0 - 2026-02-22
 
 ### Added
