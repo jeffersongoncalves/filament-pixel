@@ -2,12 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-## 3.2.0 - 2026-02-22
-
-### Changed
-
-* Renamed `FilamentPixelPlugin` to `PixelPlugin` for cleaner naming convention
-
 ## 3.1.0 - 2026-02-22
 
 ### Added
