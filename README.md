@@ -1,37 +1,65 @@
 <div class="filament-hidden">
 
-![Filament Pixel](https://raw.githubusercontent.com/jeffersongoncalves/filament-pixel/master/art/jeffersongoncalves-filament-pixel.png)
+![Filament Pixel](https://raw.githubusercontent.com/jeffersongoncalves/filament-pixel/1.x/art/jeffersongoncalves-filament-pixel.png)
 
 </div>
 
 # Filament Pixel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-pixel.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-pixel)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-pixel/fix-php-code-style-issues.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-pixel/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-pixel/fix-php-code-style-issues.yml?branch=1.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-pixel/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A1.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-pixel.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-pixel)
 
-Filament Pixel is a Laravel package that seamlessly integrates Meta Pixel analytics into your Blade templates. Using your Meta Pixel ID, it enables easy tracking of website visits and user interactions, providing valuable insights into your audience and website performance. With minimal setup, you can leverage Meta’s powerful analytics features directly within your application, helping you optimize your digital strategy and improve user engagement.
+Filament plugin to manage Meta (Facebook) Pixel settings from the admin panel using [spatie/laravel-settings](https://github.com/spatie/laravel-settings). Provides a settings page to configure the Pixel ID and automatically injects the tracking script into your Filament panels.
+
+## Compatibility
+
+| Branch | Filament | Laravel | PHP |
+|--------|----------|---------|-----|
+| 1.x | 3.x | 10+ | 8.1+ |
+| 2.x | 4.x | 11+ | 8.2+ |
+| 3.x | 5.x | 11+ | 8.2+ |
 
 ## Installation
 
-You can install the package via composer:
+Install the package via Composer:
 
 ```bash
 composer require jeffersongoncalves/filament-pixel
 ```
 
-## Usage
-
-Publish config file.
+Publish and run the settings migration from `laravel-pixel`:
 
 ```bash
-php artisan vendor:publish --tag=pixel-config
+php artisan vendor:publish --tag=pixel-settings-migrations
+php artisan migrate
 ```
 
-Add head template.
+## Usage
+
+Register the plugin in your Filament panel provider:
 
 ```php
-@include('pixel::script')
+use JeffersonGoncalves\Filament\Pixel\FilamentPixelPlugin;
+
+public function panel(Panel $panel): Panel
+{
+    return $panel
+        ->plugins([
+            FilamentPixelPlugin::make(),
+        ]);
+}
+```
+
+That's it! Navigate to the **Settings > Meta Pixel** page in your panel to configure the Pixel ID. The tracking script is automatically injected into all panel pages.
+
+### Disabling the Settings Page
+
+If you only want the automatic script injection without the settings page:
+
+```php
+FilamentPixelPlugin::make()
+    ->settingsPage(false),
 ```
 
 ## Testing
@@ -54,7 +82,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Jèfferson Gonçalves](https://github.com/jeffersongoncalves)
+- [Jefferson Goncalves](https://github.com/jeffersongoncalves)
 - [All Contributors](../../contributors)
 
 ## License

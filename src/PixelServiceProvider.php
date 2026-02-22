@@ -12,7 +12,9 @@ class PixelServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        $package->name('filament-pixel');
+        $package
+            ->name('filament-pixel')
+            ->hasTranslations();
     }
 
     public function packageRegistered(): void
