@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 3.2.1 - 2026-02-24
+
+### What's Changed
+
+- Add Laravel 13.x support (orchestra/testbench ^11.0)
+
 ## 3.2.0 - 2026-02-22
 
 **Full Changelog**: https://github.com/jeffersongoncalves/filament-pixel/compare/3.1.0...3.2.0
