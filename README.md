@@ -9,6 +9,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-pixel.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-pixel)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-pixel/fix-php-code-style-issues.yml?branch=1.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-pixel/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A1.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-pixel.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-pixel)
+[![License](https://img.shields.io/packagist/l/jeffersongoncalves/filament-pixel.svg?style=flat-square)](LICENSE.md)
 
 Filament plugin to manage Meta (Facebook) Pixel settings from the admin panel using [spatie/laravel-settings](https://github.com/spatie/laravel-settings). Provides a settings page to configure the Pixel ID and automatically injects the tracking script into your Filament panels.
 
@@ -21,6 +22,8 @@ Filament plugin to manage Meta (Facebook) Pixel settings from the admin panel us
 | 3.x | 5.x | 11+ | 8.2+ |
 
 ## Installation
+
+You can install the package via composer:
 
 Install the package via Composer:
 
