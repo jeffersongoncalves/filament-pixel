@@ -1,6 +1,6 @@
 <div class="filament-hidden">
 
-![Filament Pixel](https://raw.githubusercontent.com/jeffersongoncalves/filament-pixel/1.x/art/jeffersongoncalves-filament-pixel.png)
+![Filament Pixel](https://raw.githubusercontent.com/jeffersongoncalves/filament-pixel/1.x/art/jeffersongoncalves-filament-pixel.jpg)
 
 </div>
 
