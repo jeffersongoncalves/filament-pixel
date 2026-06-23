@@ -2,23 +2,20 @@
 
 namespace JeffersonGoncalves\Filament\Pixel;
 
-use Filament\Support\Facades\FilamentView;
 use Filament\View\PanelsRenderHook;
-use Illuminate\Contracts\View\View;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use JeffersonGoncalves\FilamentAnalyticsCore\AbstractAnalyticsServiceProvider;
 
-class PixelServiceProvider extends PackageServiceProvider
+class PixelServiceProvider extends AbstractAnalyticsServiceProvider
 {
-    public function configurePackage(Package $package): void
+    protected function packageName(): string
     {
-        $package
-            ->name('filament-pixel')
-            ->hasTranslations();
+        return 'filament-pixel';
     }
 
-    public function packageRegistered(): void
+    protected function renderHooks(): array
     {
-        FilamentView::registerRenderHook(PanelsRenderHook::HEAD_START, fn (): View => view('pixel::script'));
+        return [
+            PanelsRenderHook::HEAD_START => 'pixel::script',
+        ];
     }
 }
