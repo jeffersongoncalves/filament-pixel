@@ -17,11 +17,8 @@
     ],
     "require": {
         "php": "^8.2|^8.3",
-        "filament/filament": "^4.8",
-        "filament/spatie-laravel-settings-plugin": "^4.0",
-        "jeffersongoncalves/laravel-pixel": "^2.0",
-        "laravel/framework": "^11.0|^12.0|^13.0",
-        "spatie/laravel-package-tools": "^1.14.0"
+        "jeffersongoncalves/filament-analytics-core": "^2.0",
+        "jeffersongoncalves/laravel-pixel": "^2.0"
     },
     "require-dev": {
         "larastan/larastan": "^3.0",
