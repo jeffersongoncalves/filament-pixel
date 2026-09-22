@@ -27,6 +27,10 @@ updates:
       interval: weekly
     cooldown:
       default-days: 7
+    ignore:
+      - dependency-name: jeffersongoncalves/filament-analytics-core
+        versions:
+          - '>=2.0'
     groups:
       composer-deps:
         patterns:
@@ -53,6 +57,10 @@ updates:
       interval: weekly
     cooldown:
       default-days: 7
+    ignore:
+      - dependency-name: jeffersongoncalves/filament-analytics-core
+        versions:
+          - '>=3.0'
     groups:
       composer-deps:
         patterns:
@@ -79,6 +87,10 @@ updates:
       interval: weekly
     cooldown:
       default-days: 7
+    ignore:
+      - dependency-name: jeffersongoncalves/filament-analytics-core
+        versions:
+          - '>=4.0'
     groups:
       composer-deps:
         patterns:
