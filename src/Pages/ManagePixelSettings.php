@@ -6,6 +6,7 @@ use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Pages\SettingsPage;
+use JeffersonGoncalves\FilamentAnalyticsCore\AbstractAnalyticsPlugin;
 use JeffersonGoncalves\Pixel\Settings\PixelSettings;
 
 class ManagePixelSettings extends SettingsPage
@@ -16,7 +17,7 @@ class ManagePixelSettings extends SettingsPage
 
     public static function getNavigationGroup(): ?string
     {
-        return __('filament-pixel::pages.navigation_group');
+        return AbstractAnalyticsPlugin::navigationGroupFor('filament-pixel') ?? __('filament-pixel::pages.navigation_group');
     }
 
     public static function getNavigationLabel(): string
